@@ -1,0 +1,39 @@
+*{
+    margin: 0; /*margen es para desde eleriro*/
+    padding: 0; /*paddin es pára desde el exteriro*/    
+    box-sizing: border-box;/*para que no se desborde*/
+}
+
+.titulo{ 
+    width: 100%; /*es para que se ocupe el anco*/
+    display: flex; /*para que se alinien en lines*/
+    justify-content: center;/*para que se alinien en lines*/
+    align-items: center; /*para que se alinien en lines*/
+    padding: 40px;
+    background: black; /*color de fondo*/
+    color: white;/*color de letras*/
+}
+
+.contenedorgrid {
+    display: grid;/*para que se alinien en lineas*/ 
+    grid-template-columns: repeat(3,1fr);/*para que se alinien en lineas*/;
+    grid-gap: 10px; /*para que se alinien en lineas*/
+    padding: 20px;
+    background: black;
+    color: white;
+    
+}
+  .itemgrid{    
+    width: 100%; 
+    display: flex;  
+    flex-direction:column ; 
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .contenedoGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    
+
+
